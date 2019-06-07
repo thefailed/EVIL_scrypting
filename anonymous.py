@@ -47,7 +47,7 @@ blah = """
 for l in blah:
    sys.stdout.write(l)
    sys.stdout.flush()
-   time.sleep(0.0000000000000001)
+   time.sleep(0.0000000001)
    
 def talking():
 
@@ -79,10 +79,10 @@ def talking():
         newMessage += text
         time.sleep(0.01)
         
-    min_nu = 20
-    max_nu = 60
-    world = string.ascii_letters + string.digits
-    password = "".join(choice(world) for x in range(randint(min_nu, max_nu)))
+    min_char = 20
+    max_char = 60
+    allchar = string.ascii_letters + string.digits
+    password = "".join(choice(allchar) for x in range(randint(min_char, max_char)))
 
     mix = '{}'.format(password)
     s = "{}".format(newMessage).replace(' ', mix)
