@@ -14,17 +14,13 @@ class bcolors:
     OKBLUE = '\033[94m'
     
 blah = """
-────────────────────────
-EIDTE BY : Black Protocol
-───────────────────────────────────
-site : https://omegeng.blogspot.com
-───────────────────────────────────
+        
 """
 
 for l in blah:
    sys.stdout.write(l)
    sys.stdout.flush()
-   time.sleep(0.000000000001)
+   time.sleep(0.0001000)
    
 def talking():
  ### change encreption
@@ -42,22 +38,38 @@ def talking():
     num5 = '{}'.format(five)
 ###------------------------------------------------------------------------------###
 
-    write = 'abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+##show codes (use for one encryption)
+    
+    #print ('\033[93m----------------------')    
+    #print ("\033[91mFirst code\033[92m: " + num1)
+    #print ('\033[93m----------------------')
+    #print ("\033[91msecond code\033[92m: " + num2)
+    #print ('\033[93m----------------------')
+    #print ('\033[91mthird code\033[92m: ' + num3)
+    #print ('\033[93m----------------------')
+    #print ('\033[91mfour code\033[92m: ' + num4)
+    #print ('\033[93m----------------------')
+    #print ('\033[91mfive code\033[92m: ' + num5)
+    #print (\033[93m'----------------------\n')
+    
+###------------------------------------------------------------------------------###
 
 
+###------------------------------------------------------------------------------###
     
 ###  for keep you encryption steel one
     
 ##    num1 = 192
 ##    num2 = 312
-##    num3 = 314
+##    num3 = 314  
 ##    num4 = 113
 ##    num5 = 216
     
 ###------------------------------------------------------------------------------###
     numlist = [num1, num2, num3, num4, num5]
     newMessage = ''
-
+    write = 'abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    
     message = raw_input('\033[1mPlease Enter Message For Ecryption : ')
     blah = """\033[92mEncryption \033[91m...\n\n"""
     for l in blah:
