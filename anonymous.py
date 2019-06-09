@@ -14,51 +14,48 @@ class bcolors:
     OKBLUE = '\033[94m'
     
 blah = """
-──────────────── ────██
-────────────────────█─░█
-────────────────────█───█
-────────────────────█───█
-────────────────────█───█
-────────────────────█───█
-────────────────────█───█▓
-────────────────────█───▓█
-────────────────────█───░█
-────────────────────█───░█
-────────────────────█░░░─█
-─────────────▓███──██▓▓███
-─────────────██──▓██▓────██
-─────────────█▓────█▓─────▓█
-─────────────█▓─────█──────░█
-████████─────█▓─────█────────█
-██████████▓███░──────█──█▓────█
-██░░░░░░██───────────█░███────█▓
-▓████████─────────────█▓██────██
-█████████░────────────────────▓█
-▓████████░────────────────────░█
-▓████████░────────────────────▓█
-▓████████░────────────────────█▓
-▓████████░────────────────────█
-▓████████░───────────────────██
-▓█████░██░──────────────────█
-▓█████──████████████████████
-█████████
+────────────────────────
+EIDTE BY : Black Protocol
+───────────────────────────────────
+site : https://omegeng.blogspot.com
+───────────────────────────────────
 """
 
 for l in blah:
    sys.stdout.write(l)
    sys.stdout.flush()
-   time.sleep(0.0000000001)
+   time.sleep(0.000000000001)
    
 def talking():
+ ### change encreption
+    
+    first = randrange(10, 500)
+    second = randrange(20, 500)
+    third = randrange(10, 600)
+    four = randrange(10, 500)
+    five = randrange(10, 500)
+    
+    num1 = '{}'.format(first)
+    num2 = '{}'.format(second)
+    num3 = '{}'.format(third)
+    num4 = '{}'.format(four)
+    num5 = '{}'.format(five)
+###------------------------------------------------------------------------------###
 
-    irand = randrange(10, 500)
-    num1 = '{}'.format(irand)
-    num2 = '{}'.format(irand)
-    num3 = '{}'.format(irand)
-    num4 = '{}'.format(irand)
-    num5 = '{}'.format(irand)
     write = 'abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-    numlist = [num1, num2, num3, num4, num5] 
+
+
+    
+###  for keep you encryption steel one
+    
+##    num1 = 192
+##    num2 = 312
+##    num3 = 314
+##    num4 = 113
+##    num5 = 216
+    
+###------------------------------------------------------------------------------###
+    numlist = [num1, num2, num3, num4, num5]
     newMessage = ''
 
     message = raw_input('\033[1mPlease Enter Message For Ecryption : ')
@@ -79,17 +76,28 @@ def talking():
         newMessage += text
         time.sleep(0.01)
         
+   ## change encreption
+        
     min_char = 20
     max_char = 60
     allchar = string.ascii_letters + string.digits
     password = "".join(choice(allchar) for x in range(randint(min_char, max_char)))
-
     mix = '{}'.format(password)
+    change = '{}'.format(mix)
     s = "{}".format(newMessage).replace(' ', mix)
+    time.sleep(0.1)
     print ("\033[91mYour New Message Is \033[0m===> " + s)
+    
+###---------------------------------------------------------------------------------###
 
+   ### stay one encryption
 
+##    encr = 'fjjhkfdl1fgh1fg5d1fgf1f5fd1dfg'
+##    mix = '{}'.format(encr)
+##    s = "{}".format(newMessage).replace(' ', mix)
+##    print ("\033[91mYour New Message Is \033[0m===> " + s)
 
+###----------------------------------------------------------------------------------###     
     message = raw_input('\033[1mPlease Enter Message For Decryption: ')
      
     change = '{}'.format(message)
